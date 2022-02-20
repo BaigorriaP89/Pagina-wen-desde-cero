@@ -1,0 +1,109 @@
+*{
+    /*SACAMOS EL ESTILO POR DEFECTO*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    background-color: #01090c;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    /*IMAGEN DE FONDO*/
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%23bb3609' fill-opacity='0.29'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    /*SACAREMOS EL ESTILO POR DEFECTO Q PUEDA TENER*/
+    list-style: none;
+}
+.container{
+    /*ABARCA EL 90% Y CENTRADO*/
+    width: 90%;
+    margin: auto;
+}
+
+/*NAVEGACION**/
+.nav-main{
+    font-size: 17px;/*TAMAÑO DE LETRA*/
+    display: flex;/*CADA ELEMENTO ESTA UNO AL LADO DEL OTRO*/
+    justify-content: space-between;/*PARA QUE USE TODO EL ANCHO DE LA PAG*/
+    align-items: center;/*CENTRAR ELEMENTO*/
+    height: 60px;
+    padding: 20px;
+}
+/*ICONO IZQUIERDO*/
+.nav-brand {
+    width: 50px;
+}
+.nav-main ul li a{
+    padding: 5px; /*MARCA EL ESPACIO ENTRE EL SUBRAYADO LOGRADO Y LAS LETRAS*/
+}
+
+.nav-main ul li a:hover{ /* TUVE UN ERROR ACA Y NO ME APARECIA Y ERA PORQUE HABIA UN ESPACIO ENTRE EL A Y EL :HOVER*/
+    border-bottom: 2px solid white;/*SOLO MARCAMO LA PARTE DE ABAJO DEL BORDE DEL RECTANGULO PARA QUE QUEDE COMO SUBRAYADO*/
+}
+.nav-main ul{
+    display: flex; /*LOS ELEMENTOS UL DEL NAV MAIL SE PONGAN UNO AL LADO DEL OTRO*/
+}
+.nav-main ul li{
+    padding: 10px;
+}
+.nav-main ul.nav-menu{
+    flex: 1; /*LO ACERCA AL ITEM IZQUIERDO*/
+    margin-left: 20px; /*PONE UN MARGEN PARA Q NO ESTE TAN PEGADO AL IZQUIEDO*/
+    
+
+}
+
+/*SHOWCASE*/
+
+hr{
+    margin: 10px 0;
+}
+.showcase {
+    width: 100%;
+    height: 550px;
+        background: url(/Imagenes/Fondo\ Showcase.jpg) no-repeat center center/cover;/*PONE UNA IMAGEN COMO FONDO DE PANTALLA*/
+    /* ESTA PARTE no-repeat center center/cover HACE QUE LA IMAGEN SE CENTRE Y SE VEA LA IMAGEN COMPLETA*/
+    padding-bottom: 50px; /* PARA SEPARAR LOS ELEMENTOS Q VAN DEBAHO*/
+    display: flex;/*PARA CENTRAR EL TEXTO Q ESTA DENTRO*/
+    flex-direction: column;/* ES PARA QUE CADA ITEM ESTE UNO DEBAJO DEL OTRO*/
+    align-items: center;
+    justify-content: flex-end; /* ES PARA LLEVAR LOS ITEM ABAJO */
+    text-align: center;
+}
+.showcase p {
+    display:table-cell; /*LE DAMOS UN ESTILO TABLA PARA PODER USAR EL ATRIBUTO Q SE LE APLICA QUE ES EL SIGUIENTE*/
+    vertical-align: middle; /*ESTO CENTRARÁ  Y CONTENERA NUESTRO TEXTO PARA Q NO SALGA DE BLOQUE AUNQUE CAMBIEMOS EL TAMAÑO O ESTILO*/
+    font-family: 'PT Serif', serif;
+    font-size: 20px;    
+}
+.btn {
+    cursor: pointer /* PARA QUE SE MUESTRE COMO UN BOTON*/;
+    display: inline-block;
+     border: 0;
+     font-weight: bold;
+     padding: 10px 20px;
+     color: #ffff;
+     background: #262626;
+     font-size: 15px;
+     border: 1px solid #fff;
+     margin: 20px 0;
+     font-family: Arial, Helvetica, sans-serif;
+     
+     }
+.btn :hover{
+    opacity: .50;
+}
+
+.showcase h2,
+.showcase p{
+    margin-bottom: 10px;
+}
+
